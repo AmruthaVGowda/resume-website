@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f8f0fc;
+color: #39304a;
+}
+
+header, footer {
+background: #6c4a86;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.logo {
+color: #ffd6e7;
+font-weight: bold;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 10px;
+}
+
+nav a:hover {
+color: #ffd6e7;
+}
+
+.hero {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 50px 10%;
+gap: 30px;
+}
+
+.hero-text {
+max-width: 450px;
+line-height: 1.6;
+}
+
+h1 span, h2 {
+color: #a45c91;
+}
+
+.profile, .card {
+background: white;
+padding: 25px;
+margin: 20px auto;
+border-radius: 15px;
+box-shadow: 0 4px 10px #e2d2eb;
+}
+
+.circle {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: #d8b4e2;
+color: #6c4a86;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+margin: auto;
+}
+
+.page {
+width: 85%;
+max-width: 900px;
+margin: 30px auto;
+}
+
+.card {
+border-left: 5px solid #d8a0c8;
+}
+
+button {
+background: #a45c91;
+color: white;
+border: none;
+padding: 12px 22px;
+border-radius: 20px;
+cursor: pointer;
+}
+
+button:hover {
+background: #6c4a86;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+td, th {
+border: 1px solid #dfcce8;
+padding: 10px;
+}
+
+th, .skills span, .hobbies div {
+background: #f1e2f7;
+}
+
+.skills, .hobbies {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.skills span, .hobbies div {
+padding: 12px;
+border-radius: 10px;
+}
+
+.details p {
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #eee;
+padding: 10px;
+}
+
+.education div, .project {
+padding: 12px;
+border-bottom: 1px solid #eee;
+}
+
+.sign {
+color: #a45c91;
+font-weight: bold;
+}
+
+@media (max-width: 600px) {
+header, .hero {
+flex-direction: column;
+gap: 15px;
+}
+nav a {
+    margin: 5px;
+}
+.details p {
+    flex-direction: column;
+    gap: 5px;
+}
+}
